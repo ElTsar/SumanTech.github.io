@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suman M. - Portfolio</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --surface-color: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8;
+            --accent-hover: #0ea5e9;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--surface-color);
+            padding: 4rem 2rem;
+            text-align: center;
+            border-bottom: 2px solid var(--accent);
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-main);
+        }
+
+        .subtitle {
+            color: var(--accent);
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            color: var(--text-muted);
+        }
+
+        .contact-info a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        section {
+            margin-bottom: 3rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: var(--accent);
+            border-bottom: 1px solid var(--surface-color);
+            padding-bottom: 0.5rem;
+        }
+
+        .card {
+            background-color: var(--surface-color);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        ul {
+            list-style-position: inside;
+            color: var(--text-muted);
+        }
+
+        ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .skills-category {
+            margin-bottom: 1rem;
+        }
+        
+        .skills-category strong {
+            color: var(--text-main);
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: var(--surface-color);
+            color: var(--text-muted);
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Suman M. </h1>
+        <div class="subtitle">Electronics & Communication Engineering Student </div>
+        <div class="contact-info">
+            <span>📞 +91-7625047412 / 8050940512 </span>
+            <span>✉️ <a href="mailto:sumanrock2323@gmail.com">sumanrock2323@gmail.com</a></span>
+            <span>🔗 <a href="https://www.linkedin.com/in/suman-m-poojar-187465208" target="_blank">LinkedIn</a></span>
+            <span>📍 Sorab, Shivamogga, Karnataka 577-413 </span>
+        </div>
+    </header>
+
+    <div class="container">
+        <section id="objective">
+            <h2>Career Objective </h2>
+            <p class="card">"Aspiring Electronics and Communication Engineer with hands-on experience in IoT, embedded systems, and automation projects, seeking opportunities to apply technical and problem-solving skills in real-world applications." </p>
+        </section>
+
+        <section id="experience">
+            <h2>Professional Experience </h2>
+            <div class="card">
+                <h3>Industrial Experience </h3>
+                <ul>
+                    <li>1 year of experience in raw material inward management. </li>
+                    <li>Performed single core cutting operations. </li>
+                    <li>Assembled lift harnesses. [cite: 22]</li>
+                    <li>Maintained the sub-store for production workflows. </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Technical Projects s</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Project Bhagiratha (Water Management System) </h3>
+                    <ul>
+                        <li>IoT-based App control and monitoring for house water tank management to automate the system based on real-time water level and purity data. </li>
+                        <li>Designed an ESP32-based system to monitor and control rooftop tank water levels. </li>
+                        <li>Integrated a mobile app providing real-time water status and motor control capabilities. </li>
+                        <li>Added a TDS sensor to effectively monitor water purity. </li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Project Street Light </h3>
+                    <ul>
+                        <li>Engineered a system to control street lights using an Ultrasonic Sensor. </li>
+                        <li>Programmed to read speeds and provide a time delay to keep the light illuminated. </li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Project IoT Home Automation </h3>
+                    <ul>
+                        <li>Developed a system for controlling home lights and fans using an IoT application from any remote location. </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Technical Skills </h2>
+            <div class="card grid">
+                <div class="skills-category">
+                    <strong>Programming:</strong> C++ Basic, Arduino IDE, ESP-IDF, Xlinix ISE (Verilog). 
+                </div>
+                <div class="skills-category">
+                    <strong>Hardware:</strong> ESP32, Arduino, Sensors, PCB Fabrication, Microcontrollers, Electronics Circuit Soldering, Circuit analysis. 
+                </div>
+                <div class="skills-category">
+                    <strong>Tools & Systems:</strong> VS Code, MIT App Inventor, Blynk, Canva, Microsoft Office, IoT Systems, Troubleshooting.
+                </div>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Education </h2>
+            <div class="card">
+                <h3>Govt Polytechnic, Sorab </h3>
+                <p>Department of Technical Education - E&CE </p>
+                <p style="color: var(--text-muted);">Year of Passing: 2026 | Score: 7.8 CGPA </p>
+            </div>
+            <div class="card">
+                <h3>Govt High School Anavatti </h3>
+                <p>SSLC (KSEAB) - English Medium </p>
+                <p style="color: var(--text-muted);">Year of Passing: 2020 | Score: 54.80% </p>
+            </div>
+        </section>
+
+        <section id="leadership">
+            <h2>Leadership & Achievements </h2>
+            <div class="card">
+                <ul>
+                    <li>Served as Captain in NSS Camp 2024-25, successfully leading over 100 students in various activities. </li>
+                    <li>Organized and participated in social initiatives and technical events, winning recognition for innovative project ideas in IoT and automation. [cite: 35]</li>
+                    <li>Served and participated in the National Integration Camp of NSS at Kuvempu University. </li>
+                    <li>Secured First Prize in the College-level Quiz Competition held by BEE Energy. </li>
+                    <li>Achieved Second Prize in the College-level Speech Competition held by BEE Energy. [</li>
+                    <li>Won First Prize in the College-level Cooking Competition without fire. </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="personal">
+            <h2>Personal Details & Interests [cite: 44, 52]</h2>
+            <div class="card">
+                <p><strong>Languages:</strong> English, Kannada, Hindi </p>
+                <p><strong>Interests:</strong> Gaming, Innovation, IoT Projects, Leadership </p>
+                <p><strong>Hobbies:</strong> Drawing, Guitar, Art n Craft, Exploring Internet for New Concept, Traveling, Cooking, Writing Poem & Story </p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Suman M. All Rights Reserved. </p>
+    </footer>
+
+</body>
+</html>
